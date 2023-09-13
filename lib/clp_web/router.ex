@@ -1,5 +1,6 @@
 defmodule ClpWeb.Router do
   use ClpWeb, :router
+  # use Plug.ErrorHandler
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -12,6 +13,13 @@ defmodule ClpWeb.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
+  end
+
+  scope "/api", ClpWeb do
+    pipe_through :api
+
+    get "/payment-statuses", PaymentStatusController, :index
+    get "/payment-statuses/:id", PaymentStatusController, :show
   end
 
   scope "/", ClpWeb do

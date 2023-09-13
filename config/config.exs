@@ -17,6 +17,12 @@ config :clp, ClpWeb.Endpoint,
     formats: [html: ClpWeb.ErrorHTML, json: ClpWeb.ErrorJSON],
     layout: false
   ],
+  # render_errors: [
+  #   formats: [json: ClpWeb.ErrorJSON],
+  #   view: ClpWeb.ErrorView,
+  #   accepts: ~w(json),
+  #   layout: false
+  # ],
   pubsub_server: Clp.PubSub,
   live_view: [signing_salt: "TUwCb0R9"]
 
