@@ -20,6 +20,11 @@ defmodule ClpWeb.Router do
 
     get "/payment-statuses", PaymentStatusController, :index
     get "/payment-statuses/:id", PaymentStatusController, :show
+    get "/invoices", InvoiceController, :index
+    get "/invoices/:id", InvoiceController, :show
+    post "/invoices", InvoiceController, :create
+    put "/invoices/:id", InvoiceController, :update
+    delete "/invoices/:id", InvoiceController, :delete
   end
 
   scope "/", ClpWeb do
