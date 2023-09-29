@@ -1,15 +1,30 @@
 # Clp
 
-To start your Phoenix server:
+## ⛓️ Dependências para instalar
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+## 🚀 Como rodar?
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+```
+# Instalar dependências
+mix setup
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+# Rodar migrations
+mix ecto.migrate
 
-## Learn more
+# Rodar seeds
+mix run priv/repo/seeds.exs
+
+# Rodar o servidor
+mix phx.server
+
+```
+
+O servidor será inciado em [`localhost:4000`](http://localhost:4000).
+
+## 🌙 Insomnia
+As rotas podem ser acessadas pelo Insomnia. O arquivo da collection está na raiz deste repositório como JSON.
+
+## 🌐 Links úteis
 
   * Official website: https://www.phoenixframework.org/
   * Guides: https://hexdocs.pm/phoenix/overview.html
