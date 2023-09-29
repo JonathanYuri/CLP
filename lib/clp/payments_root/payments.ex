@@ -14,7 +14,7 @@ defmodule Clp.PaymentsRoot.Payments do
   @doc false
   def changeset(payments, attrs) do
     payments
-    |> cast(attrs, [:customerId, :scheduledTo])
-    |> validate_required([:customerId, :scheduledTo])
+    |> cast(attrs, [:customerId, :scheduledTo, :invoice, :status])
+    |> validate_required([:customerId, :invoice])
   end
 end

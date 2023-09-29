@@ -12,6 +12,7 @@ defmodule ClpWeb.PaymentsController do
   end
 
   def create(conn, %{"payments" => payments_params}) do
+    # IO.puts payments_params
     with {:ok, %Payments{} = payments} <- PaymentsRoot.create_payments(payments_params) do
       conn
       |> put_status(:created)
