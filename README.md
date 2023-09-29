@@ -22,7 +22,7 @@ mix phx.server
 O servidor será inciado em [`localhost:4000`](http://localhost:4000).
 
 ## 🌙 Insomnia
-As rotas podem ser acessadas pelo Insomnia. O arquivo da collection está na raiz deste repositório como JSON.
+As rotas podem ser acessadas pelo Insomnia. O arquivo da collection está na raiz deste repositório como JSON. [Link](https://github.com/JonathanYuri/CLP/blob/main/CLP-Insomnia_2023-09-29.json)
 
 ## 🌐 Links úteis
 
