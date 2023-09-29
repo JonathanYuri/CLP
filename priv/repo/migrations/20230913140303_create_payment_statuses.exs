@@ -3,7 +3,7 @@ defmodule Clp.Repo.Migrations.CreatePaymentStatuses do
 
   def change do
     create table(:payment_statuses) do
-      add :description, :string
+      add :description, :string, null: false
 
       timestamps()
     end
