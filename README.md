@@ -1,6 +1,8 @@
 # Clp
 
-## ⛓️ Dependências para instalar
+## ⛓️ Dependências a serem instaladas
+- Elixir
+- Phoenix
 
 ## 🚀 Como rodar?
 
