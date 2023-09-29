@@ -28,6 +28,12 @@ defmodule ClpWeb.InvoiceController do
     render(conn, :show, invoice: invoice)
   end
 
+  def findByBarCode(conn, %{"barCode" => barCode}) do
+    id = String.replace(barCode, "1000000_", "")
+    invoice = Invoices.get_invoice!(id)
+    render(conn, :show, invoice: invoice)
+  end
+
   def update(conn, %{"id" => id, "invoice" => invoice_params}) do
     invoice = Invoices.get_invoice!(id)
 

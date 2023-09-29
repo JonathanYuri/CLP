@@ -13,5 +13,12 @@ defmodule Clp.Repo.Migrations.CreatePayments do
 
     create index(:payments, [:status])
     create index(:payments, [:invoice])
+    create(
+      unique_index(
+        :payments,
+        ~w(invoice)a,
+        name: :index_for_invoice_in_payments_duplicate_entries
+      )
+    )
   end
 end
